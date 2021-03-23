@@ -56,5 +56,14 @@
   <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
   <ItemGroup>
     <Folder Include="Properties" />
+    <Folder Include="dbo" />
+    <Folder Include="dbo\Tables" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="dbo\Tables\HR_editions.sql" />
+    <Build Include="dbo\Tables\HR_games.sql" />
+    <Build Include="dbo\Tables\HR_maps.sql" />
+    <Build Include="dbo\Tables\HR_runs.sql" />
+    <Build Include="dbo\Tables\HR_users.sql" />
   </ItemGroup>
 </Project>
